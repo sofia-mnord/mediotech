@@ -22,7 +22,6 @@ Teknikstack som användes:
 * Firestore
 
 ## Project 
-This project was carried out using agile methods. We worked in weekly iterations and as part of the project process, we produced:
 Projektet genomfördes med hjälp av agila metoder. Vi arbetade i veckovisa iterationer, och i processen producerades:
 
 * En projektvision
