@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startsida</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="./js/components/my-logout-button/index.js"></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <h1>MedioTech</h1>
+      <my-logout-button></my-logout-button>
+    </header>
+    <main id="index-page">
+      <div class="background">
+        <img src="./images/judy-beth-morris-p-uJyWmr6BE-unsplash.png" alt="Heart monitor">
+      </div>
+      <div class="card-wrapper">
+        <a class="card" href="./utlaning.html">
+          <img src="./images/mediotech_icon.png" alt="MedioTech icon">
+          <span>Registrera utlån</span>
+        </a>
+        <a class="card" href="./aterlamning.html">
+          <img src="./images/mediotech_icon.png" alt="MedioTech icon">
+          <span>Registrera återlämning</span>
+        </a>
+        <a class="card" href="./oversikt.html">
+          <img src="./images/mediotech_icon.png" alt="MedioTech icon">
+          <span>Översikt</span>
+        </a>
+      </div>
+    </main>
+    <footer>
+      <p>1dv613</p>
+      <p>Sofia Nord</p>
+    </footer>
+  </div>
+  <script type="module">
+    import { requireAuthentication } from './js/auth-guard.js'
+    requireAuthentication()
+  </script>
+</body>
+
+</html>

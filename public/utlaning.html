@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utlåning av utrustning</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="./js/firebase-init.js"></script>
+  <script type="module" src="./js/components/my-loan-form/index.js"></script>
+  <script type="module" src="./js/components/my-logout-button/index.js"></script>
+  <script type="module" src="./js/utlaning.js"></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <h1>MedioTech</h1>
+      <nav>
+        <a href="index.html">Start</a>
+        <a href="utlaning.html" id="thisPage">Utlåning</a>
+        <a href="aterlamning.html">Återlämning</a>
+        <a href="oversikt.html">Översikt</a>
+      </nav>
+      <my-logout-button></my-logout-button>
+    </header>
+    <main id="loanPage">
+      <my-loan-form></my-loan-form>
+    </main>
+    <footer>
+      <p>1dv613</p>
+      <p>Sofia Nord</p>
+    </footer>
+  </div>
+  <script type="module">
+    import { requireAuthentication } from './js/auth-guard.js'
+    requireAuthentication()
+  </script>
+</body>
+
+</html>

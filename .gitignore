@@ -1,0 +1,21 @@
+# OS-specifika filer
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+
+# Firebase filer
+.firebase/
+.firebaserc
+
+# Miljöfiler
+.env
+.env.local
+
+# VS Code
+.vscode/
+
+# Byggfiler
+dist/
+build/

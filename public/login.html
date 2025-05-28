@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inloggning</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="./js/components/my-login-form/index.js"></script>
+  <script type="module" src="./js/firebase-init.js"></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <h1>MedioTech</h1>
+    </header>
+    <main>
+      <my-login-form></my-login-form>
+    </main>
+    <footer>
+      <p>1dv613</p>
+      <p>Sofia Nord</p>
+    </footer>
+  </div>
+  <script type="module">
+    import { redirectAuthenticatedUser } from './js/auth-guard.js'
+    redirectAuthenticatedUser()
+  </script>
+</body>
+
+</html>
